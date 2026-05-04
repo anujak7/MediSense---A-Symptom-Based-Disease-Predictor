@@ -1,6 +1,5 @@
-# 🏥 MediSense: A Symptom-Based Disease Predictor
+#  MediSense: A Symptom-Based Disease Predictor
 
-![MediSense Banner](banner.png)
 
 [![Python Version](https://img.shields.io/badge/python-3.8%2B-blue.svg)](https://www.python.org/)
 [![ML Framework](https://img.shields.io/badge/Machine%20Learning-Scikit--Learn-orange.svg)](https://scikit-learn.org/)
@@ -11,17 +10,17 @@
 
 ---
 
-## 🌟 Key Features
+##  Key Features
 
-- **🎯 High Accuracy:** Achieves **99.25% accuracy** on clinical test data.
-- **🔍 Intelligent Feature Selection:** Automatically identifies the top 15 most significant symptoms using Importance Scores.
-- **💬 Interactive Interface:** Easy-to-use Command Line Interface (CLI) for real-time symptom input.
-- **📊 Detailed Analytics:** Generates a comprehensive performance report and Confusion Matrix after every training session.
-- **📚 Knowledge Base:** Includes a secondary descriptive dataset with treatment info and specialist recommendations.
+- **High Accuracy:** Achieves **99.25% accuracy** on clinical test data.
+- **Intelligent Feature Selection:** Automatically identifies the top 15 most significant symptoms using Importance Scores.
+- **Interactive Interface:** Easy-to-use Command Line Interface (CLI) for real-time symptom input.
+- **Detailed Analytics:** Generates a comprehensive performance report and Confusion Matrix after every training session.
+- **Knowledge Base:** Includes a secondary descriptive dataset with treatment info and specialist recommendations.
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 - **Language:** Python 3.x
 - **Data Handling:** `Pandas`, `NumPy`
@@ -30,7 +29,7 @@
 
 ---
 
-## 📂 Project Structure
+##  Project Structure
 
 ```text
 ├── random_forest_disease_predictor.py  # Main ML Pipeline & CLI
@@ -44,7 +43,7 @@
 
 ---
 
-## 🚀 Getting Started
+##  Getting Started
 
 ### 1. Prerequisites
 Ensure you have Python installed. You can install the required libraries using:
@@ -64,7 +63,7 @@ Enter your symptoms separated by commas when prompted:
 
 ---
 
-## 📈 Model Evaluation
+##  Model Evaluation
 
 The model was evaluated using a **Confusion Matrix** on a 20% test split:
 
@@ -87,19 +86,19 @@ The model was evaluated using a **Confusion Matrix** on a 20% test split:
 
 ---
 
-## 📂 Dataset Source
+##  Dataset Source
 The primary training data is based on the [Disease Prediction using Machine Learning](https://www.kaggle.com/datasets/kaushil268/disease-prediction-using-machine-learning) dataset from Kaggle.
 
 ---
 
-## ⚠️ Disclaimer
+##  Disclaimer
 *MediSense is intended for educational and preliminary screening purposes only. It is not a substitute for professional medical diagnosis, advice, or treatment. Always consult a qualified healthcare provider for medical concerns.*
 
 ---
 
-## 👤 Author
-**[Your Name]**  
+##  Author
+**Anuj Khan**  
 *Computer Science Student*
 
 ---
-⭐ **If you find this project helpful, don't forget to give it a star!**
+ **If you find this project helpful, don't forget to give it a star!**
