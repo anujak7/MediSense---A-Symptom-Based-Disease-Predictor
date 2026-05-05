@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MediSense | AI Disease Predictor</title>
+    <meta name="description" content="Predict diseases based on symptoms using our advanced AI model.">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            MediSense
+        </div>
+        <div class="nav-links">
+            <!-- Optional: Link to docs or other pages -->
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>Symptom-Based <br><span style="color: var(--primary);">Disease Prediction</span></h1>
+            <p>Our advanced Machine Learning model analyzes your symptoms to provide potential diagnosis. Fast, accurate, and secure.</p>
+        </section>
+
+        <section class="symptom-card">
+            <div class="card-title">
+                <i class="fas fa-stethoscope" style="color: var(--primary);"></i>
+                Select Your Symptoms
+            </div>
+            
+            <div id="symptoms-container" class="symptoms-grid">
+                <!-- Symptoms will be loaded here via JS -->
+                <div class="symptom-label" style="grid-column: 1/-1; border: none; opacity: 0.5;">Loading symptoms...</div>
+            </div>
+
+            <button id="predict-btn" class="predict-btn" disabled>
+                <div class="loader" id="loader"></div>
+                <span id="btn-text">Predict Diagnosis</span>
+                <i class="fas fa-arrow-right" id="btn-icon"></i>
+            </button>
+        </section>
+
+        <section id="result-container">
+            <div class="result-card">
+                <div style="font-size: 0.9rem; text-transform: uppercase; letter-spacing: 2px; color: var(--text-muted); margin-bottom: 1rem;">Predicted Condition</div>
+                <div id="predicted-disease" class="result-disease">---</div>
+                <div id="prediction-confidence" class="result-confidence">Confidence: --%</div>
+                <div id="prediction-desc" class="result-desc">
+                    Analyzing your symptoms...
+                </div>
+                
+                <div style="margin-top: 2rem; padding-top: 2rem; border-top: 1px solid var(--glass-border); font-size: 0.85rem; color: var(--text-muted);">
+                    <i class="fas fa-circle-info"></i> Note: This is an AI prediction and not a clinical diagnosis.
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer style="padding: 3rem; text-align: center; color: var(--text-muted); border-top: 1px solid var(--glass-border);">
+        <p>&copy; 2026 MediSense AI. Empowering healthcare with technology.</p>
+    </footer>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
